@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Chooseclassify">
+
+    <ImageButton
+        android:id="@+id/business_mem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="320dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:scaleType="center"
+        android:src="@drawable/bussines"
+        android:text="사업자 회원가입"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/personal_mem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="228dp"
+        android:layout_marginTop="320dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:src="@drawable/personal"
+        android:text="개인 회원가입"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <include
+        layout="@layout/tool_bar"
+        android:layout_width="389dp"
+        android:layout_height="88dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="137dp"
+            android:layout_height="93dp"
+            android:layout_weight="30"
+            android:src="@drawable/tree"
+            android:layout_gravity="bottom">
+
+        </ImageView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

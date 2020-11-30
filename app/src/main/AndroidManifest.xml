@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.afinal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="살어리랏다"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".membermodify" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Loading"
+            android:theme="@style/LoadingTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".menuActivity2" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MemberInitActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".PasswordResetActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".ThirdActivity" />
+        <activity android:name=".MypageActivity" />
+        <activity android:name=".hamburger" />
+        <activity android:name=".RecuritBoard.boardActivity" />
+        <activity android:name=".RecuritBoard.boardtapsActivity" />
+        <activity android:name=".MemberInitActivity_Business"/>
+
+        <activity
+            android:name=".SocialBoard.Features.ShowPostList.SocialPostListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ApplyBoard.Features.ShowPostList.ApplyPostListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ApplyBoard.Features.ShowPostList.ApplyBimActivity" />
+        <activity android:name=".ApplyBoard.Features.ShowPostList.ApplyChamActivity" />
+        <activity android:name=".ApplyBoard.Features.CreatePost.ApplyPostCreateActivity" />
+        <activity android:name=".Chooseclassify" />
+        <activity android:name=".MemberInitActivity_Personal" />
+        <activity android:name=".SignUpActivity_Personal" />
+        <activity android:name=".SignUpActivity_Business" />
+        <activity android:name=".ApplyBoard.Features.ShowPostList.ApplyMoonActivity" />
+        <activity android:name=".ApplyBoard.Features.ShowPostList.ApplyPostListAfterActivity"/>
+        <activity android:name=".RecuritBoard.RecruitActivity"/>
+        <activity android:name=".RecuritBoard.RecruitPostActivity"/>
+        <activity android:name=".RecuritBoard.RecruitPostListActivity"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBz_ZJntT98OpW-SOSh2s8v9p6w8xRwyXc" />
+    </application>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        tools:ignore="ManifestOrder" />
+
+</manifest>

@@ -1,0 +1,70 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@color/background"
+    tools:context=".SocialBoard.Features.CreatePost.PostCreateDialogFragment">
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="제목"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="간단한 소개 및 포부"
+        android:inputType="textLongMessage|textMultiLine"
+        android:lines="8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleEditText" />
+
+    <ImageButton
+        android:id="@+id/createButton"
+        android:layout_width="154dp"
+        android:layout_height="74dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_smallok"
+        android:text="@string/create_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/cancelButton"
+        app:layout_constraintTop_toBottomOf="@+id/contentEditText" />
+
+    <ImageButton
+        android:id="@+id/cancelButton"
+        android:layout_width="166dp"
+        android:layout_height="76dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_cancle"
+        android:text="@string/cancel_button"
+        app:layout_constraintLeft_toRightOf="@+id/createButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contentEditText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <ImageView
+            android:layout_width="137dp"
+            android:layout_height="93dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="30"
+            android:src="@drawable/tree">
+
+        </ImageView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

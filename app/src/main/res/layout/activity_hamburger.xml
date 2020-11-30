@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="585dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/mypage"
+            android:layout_width="187dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/mypage" />
+
+        <ImageButton
+            android:id="@+id/staff"
+            android:layout_width="187dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/staff_advertise" />
+
+        <ImageButton
+            android:id="@+id/staffwant"
+            android:layout_width="193dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/staff_valunteer" />
+
+        <ImageButton
+            android:id="@+id/staffplay"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/staff_community" />
+
+        <ImageButton
+            android:id="@+id/lookaround"
+            android:layout_width="214dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/jeju_travel" />
+
+
+        <ImageButton
+            android:id="@+id/logoutBtn"
+            android:layout_width="209dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/logout" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="137dp"
+            android:layout_height="93dp"
+            android:layout_weight="30"
+            android:src="@drawable/tree"
+            android:layout_gravity="bottom">
+
+        </ImageView>
+    </LinearLayout>
+</LinearLayout>

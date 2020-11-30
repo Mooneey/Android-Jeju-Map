@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+
+    <include layout="@layout/tool_bar" />
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/titleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="제목"
+                android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/contentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="구인정보"
+                android:inputType="textLongMessage|textMultiLine"
+                android:lines="8" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="220dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/upload_pic" />
+
+            <ImageButton
+                android:id="@+id/uploadPic"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_upload" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/updateButton"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/btn_update" />
+
+                <ImageButton
+                    android:id="@+id/cancelButton"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/btn_cancle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="45dp">
+
+                <ImageView
+                    android:layout_width="137dp"
+                    android:layout_height="93dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="30"
+                    android:src="@drawable/tree">
+
+                </ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

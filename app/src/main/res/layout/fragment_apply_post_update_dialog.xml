@@ -1,0 +1,70 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@color/background"
+    tools:context=".SocialBoard.Features.UpdatePostInfo.PostUpdateDialogFragment">
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="제목"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="간단한 소개 및 포부"
+        android:inputType="textLongMessage|textMultiLine"
+        android:lines="8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleEditText" />
+
+
+    <ImageButton
+        android:id="@+id/updateStudentInfoButton"
+        android:layout_width="198dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_update"
+        android:text="@string/update"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/cancelButton"
+        app:layout_constraintTop_toBottomOf="@+id/contentEditText" />
+
+    <ImageButton
+        android:id="@+id/cancelButton"
+        android:layout_width="180dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_cancle"
+        android:text="@string/cancel_button"
+        app:layout_constraintLeft_toRightOf="@+id/updateStudentInfoButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contentEditText" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="137dp"
+            android:layout_height="93dp"
+            android:layout_weight="30"
+            android:src="@drawable/tree"
+            android:layout_gravity="bottom">
+
+        </ImageView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

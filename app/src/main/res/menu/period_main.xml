@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Features.ShowStudentList.TestActivity">
+
+    <item
+        android:id="@+id/option_2to4_week"
+        android:title="2주~4주" />
+    <item
+        android:id="@+id/option_1month"
+        android:title="1개월" />
+    <item
+        android:id="@+id/option_2month"
+        android:title="2개월" />
+    <item
+        android:id="@+id/option_3to6month"
+        android:title="3개월~6개월" />
+
+    <item
+        android:id="@+id/option_6toYear"
+        android:title="6개월~1년" />
+
+    <item
+        android:id="@+id/option_moreThanYear"
+        android:title="1년 이상"
+        />
+
+</menu>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:src="@drawable/member_info" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="625dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/ceonameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="대표자명"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/housenameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="게스트하우스명"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/registernumEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="사업자등록번호"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="전화번호"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="주소"
+            android:inputType="textPostalAddress" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="148dp"
+            android:layout_height="137dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            android:src="@drawable/image_pick" />
+
+        <ImageButton
+            android:id="@+id/completeBtn"
+            android:layout_width="306dp"
+            android:layout_height="46dp"
+            android:layout_margin="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_ok" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="137dp"
+                android:layout_height="93dp"
+                android:layout_weight="30"
+                android:src="@drawable/tree"
+                android:layout_gravity="bottom">
+
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
